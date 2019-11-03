@@ -17,7 +17,7 @@ a{
 section{
     padding: 10rem 0;
     background-color: #fff;
-    background-image: url(images/blackbg.jpeg);
+    background-image: url(blackbg.jpeg);
     background-size: cover;
 }
 .heading{
