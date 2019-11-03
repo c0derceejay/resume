@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreativeMindz</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="cardstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+/*----HEADER CSS---*/
+#header{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.scroll-btn{
+    bottom: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #fff;
+    padding: 10px 10px 20px;
+    border-radius: 30px;
+}
+.scroll-bar span{
+    border: 2px solid #fff;
+    font-size: 10px;
+    border-radius: 30px;
+}
+.scroll-bar{
+    animation: mover 1s infinite alternate;
+}
+
+@keyframes mover{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(10px);}
+}
+
+
+/*----About---*/
+.nav-bar{
+    top: 0;
+    position: sticky;
+    z-index: 2;
+}
+.navbar{
+    background-color: black;
+}
+.navbar-brand img{
+    height: 50px;
+}
+.nav-bar .fa-bars{
+    font-size: 35px;
+    color: #fff;
+}
+.navbar-toggler{
+    outline: none !important;
+}
+.navbar-nav{
+    float: right;
+    text-align: right;
+}
+.nav-link{
+    color: #fff !important;
+    font-size: 2rem;
+}
+.skills-bar p{
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+.progress{
+    border-radius: 16px;
+    margin-bottom: 10px;
+}
+.progress-bar{
+    border-radius: 16px;
+    background: #000 !important;
+}
+
+</style>
+<body>
+    <section class="user-info">
+            <div class="nav-bar">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li> 
+                </div>
+                </nav>
+                </div>
+    </section>
+    <section>
+        <div class="container">
+            <h1 class="heading">Meet the Team</h1>
+            <div class="card-wrapper">
+                <div class="card">
+                    <img src="images/card-bg.png" alt="card-background" class="card-img">
+                    <img src="images/me.jpg" alt="" class="profile-img">
+                    <h1>Christopher Jackson</h1>
+                    <p class="job-title">Founder/Programmer</p>
+                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus praesentium aperiam officiis vero laboriosam placeat dolores iure, similique reiciendis at non alias recusandae voluptatum ipsum impedit quia ullam molestiae ex.</p>
+                    <a href="#" class="btn">Contact</a>
+                    <ul class="social-media">
+                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                        <img src="images/card-bg.png" alt="card-background" class="card-img">
+                        <img src="images/harry.jpeg" alt="" class="profile-img">
+                        <h1>Harry Pothead</h1>
+                        <p class="job-title">Co-Founder/Lead Designer</p>
+                        <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus praesentium aperiam officiis vero laboriosam placeat dolores iure, similique reiciendis at non alias recusandae voluptatum ipsum impedit quia ullam molestiae ex.</p>
+                        <a href="#" class="btn">Contact</a>
+                        <ul class="social-media">
+                            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                </div>
+                <div class="card">
+                        <img src="images/card-bg.png" alt="card-background" class="card-img">
+                        <img src="images/shuri.png" alt="" class="profile-img">
+                        <h1>Shuri</h1>
+                        <p class="job-title">Lead Graphic Designer</p>
+                        <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus praesentium aperiam officiis vero laboriosam placeat dolores iure, similique reiciendis at non alias recusandae voluptatum ipsum impedit quia ullam molestiae ex.</p>
+                        <a href="#" class="btn">Contact</a>
+                        <ul class="social-media">
+                            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                </div>
+                <div class="card">
+                        <img src="images/card-bg.png" alt="card-background" class="card-img">
+                        <img src="images/thanos.jpg" alt="" class="profile-img">
+                        <h1>Thanos</h1>
+                        <p class="job-title">Destroyer of Worlds</p>
+                        <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus praesentium aperiam officiis vero laboriosam placeat dolores iure, similique reiciendis at non alias recusandae voluptatum ipsum impedit quia ullam molestiae ex.</p>
+                        <a href="#" class="btn">Contact</a>
+                        <ul class="social-media">
+                            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                </div>
+                <div class="card">
+                        <img src="images/card-bg.png" alt="card-background" class="card-img">
+                        <img src="images/strange.jpg" alt="" class="profile-img">
+                        <h1>Dr. Strange</h1>
+                        <p class="job-title">Lead Project Manager/Programmer</p>
+                        <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus praesentium aperiam officiis vero laboriosam placeat dolores iure, similique reiciendis at non alias recusandae voluptatum ipsum impedit quia ullam molestiae ex.</p>
+                        <a href="#" class="btn">Contact</a>
+                        <ul class="social-media">
+                            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                </div>
+                <div class="card">
+                        <img src="images/card-bg.png" alt="card-background" class="card-img">
+                        <img src="images/goku.jpg" alt="" class="profile-img">
+                        <h1>Goku</h1>
+                        <p class="job-title">God in the flesh</p>
+                        <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus praesentium aperiam officiis vero laboriosam placeat dolores iure, similique reiciendis at non alias recusandae voluptatum ipsum impedit quia ullam molestiae ex.</p>
+                        <a href="#" class="btn">Contact</a>
+                        <ul class="social-media">
+                            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="smooth-scroll.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+</body>
+</html>
